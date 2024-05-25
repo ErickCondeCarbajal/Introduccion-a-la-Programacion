@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenido">
+        <h1>
+            Cuarto Ejercicio
+        </h1>
+        <p>
+            4.	Escribir un Programa que calcule 4 áreas: 1-cuadrado, 2-rectángulo, 3-triángulo y 4-círculo. El programa deberá solicitar para cada caso el ingreso de los datos necesarios para la definición de cada área, en caso se ingrese una opción diferente envié el mensaje de que la operación no está permitida. (considere el valor de la función de Math.PI para el cálculo del área del circulo Math.PI=3.141592653589793).
+        </p>
+        <div id="resultado">
+            <script>
+               var opcion = parseInt(prompt("Ingrese el número correspondiente a la figura cuyo área desea calcular: \n1 - Cuadrado \n2 - Rectángulo \n3 - Triángulo \n4 - Círculo"));
+                var area;
+
+                if (opcion === 1) {
+                    var lado = parseFloat(prompt("Ingrese la longitud del lado del cuadrado: "));
+                    if (lado <= 0) {
+                        area = "Por favor, ingrese una longitud válida para el lado.";
+                    } else {
+                        area = lado * lado;
+                    }
+                } else if (opcion === 2 || opcion === 3) {
+                    var base = parseFloat(prompt("Ingrese la longitud de la base: "));
+                    var altura = parseFloat(prompt("Ingrese la altura: "));
+                    if (base <= 0 || altura <= 0) {
+                        area = "Por favor, ingrese valores válidos para la base y la altura.";
+                    } else {
+                        area = base * altura / 2;
+                    }
+                } else if (opcion === 4) {
+                    var radio = parseFloat(prompt("Ingrese el radio del círculo: "));
+                    if (radio <= 0) {
+                        area = "Por favor, ingrese un radio válido para el círculo.";
+                    } else {
+                        area = Math.PI * radio * radio;
+                    }
+                } else {
+                    area = "La operación no está permitida. Por favor, seleccione una opción válida.";
+                }
+
+
+
+                document.getElementById("resultado").innerHTML = "El área calculada es: " + area;
+
+    </script>
+        </div>
+    </div>
+</body>
+</html>

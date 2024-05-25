@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenido">
+        <h1>
+            Segundo Ejercicio
+        </h1>
+        <p>
+            2.	Un trabajador de cierta empresa recibe un sueldo mensual que está determinado por el número de horas que trabaja durante el mes y el valor en soles por hora. Asimismo, el valor por hora se incrementa en un 60% para todas las horas a partir de las 50 horas. Calcule y muestre el sueldo que le corresponde al trabajador de esta empresa.
+        </p>
+        <div id="resultado">
+            <script>
+                var horastrabajadas,valorPorHora,sueldoMensual,sueldoBase,sueldoExtra,horasextra;
+
+                valorPorHora=parseInt(prompt("Ingrese el valor por hora en soles: "));
+                horastrabajadas=parseInt(prompt("Ingrese las horas trabajadas durante el mes: "));
+
+
+                if (horastrabajadas<=50) {
+                        sueldoMensual=horastrabajadas*valorPorHora
+                } else {
+                    horasextra= horastrabajadas - 50;
+                    sueldoBase = 50* valorPorHora;
+                    sueldoExtra = horasextra * valorPorHora * 1.60//Incremento de 60%
+                    sueldoMensual= sueldoBase + sueldoExtra;    
+                }
+                document.write("El sueldo que le corresponde al trabajador de la Empresa es de: S/"+sueldoMensual.toFixed(2))
+                
+                
+                    
+                   
+        
+            </script>
+        </div>
+    </div>
+</body>
+</html>

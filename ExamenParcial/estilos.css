@@ -1,0 +1,37 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    padding: 30px;
+}
+#contenido{
+    border: 5px solid black;
+    width: 75%;
+    height: 400px;
+    margin: auto;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+#resultado{
+    text-align: center;
+    height: auto;
+    margin: 20px;
+    font-style: italic;
+    border: 5px solid;
+    padding: 20px;
+    background-color: azure;
+
+}
+h1{
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    font-style: italic;
+
+}
+p{
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="contenido">
+        <h1>
+            Tercer Ejercicio
+        </h1>
+        <p>
+            3.	Diseñar un programa que permita ingresar la edad de una cierta persona, y muestre:
+            •El mensaje de NIÑO si la edad es hasta 10;  <br>
+            •El mensaje “PUBER” si la edad es mayor que 10 y menor o igual 15; <br> 
+            •El mensaje “ADOLESCENTE” si la edad es mayor que 15 y menor o igual 19;<br> 
+            •El mensaje “JOVEN” si la edad es mayor que 19 y menor o igual 26; <br>
+            •El mensaje “ADULTO” si la edad es mayor que 26 y menor o igual 65; <br>
+            •Y el mensaje “ANCIANO” si la edad es mayor que 65. <br>
+
+        </p>
+        <div id="resultado">
+            <script>
+                var edad,mensaje
+
+
+                edad=parseInt(prompt("Ingrese la edad de la persona: "))
+                
+                if (edad<=10) {
+                    mensaje="NIÑO";
+                } else {
+                    if (edad<=15) {
+                        mensaje="PUBER";
+                    } else {
+                        if (edad<=19) {
+                            mensaje="ADOLESCENTE";
+                        } else {
+                            if (edad<=26) {
+                                mensaje="JOVEN";
+                            } else {
+                                if (edad<=65) {
+                                    mensaje="ADULTO";
+                                } else {
+                                    mensaje="ANCIANO";
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                document.write("La persona es: "+mensaje)
+            </script>
+        </div>
+    </div>
+</body>
+</html>
