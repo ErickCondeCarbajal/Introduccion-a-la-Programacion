@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    width: 65%;
+    margin: auto;
+    height: 75%;
+    padding: 20px;
+}
+#cabecera{
+    padding: 10px;
+    height:100% ;
+    background-color:darkcyan;
+
+}
+#navegador{
+    display: flex;
+    flex-wrap: wrap;
+}
+#navegador ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex-direction: row;
+}
+#navegador img{
+    margin-right: 60px;
+}
+#navegador li {
+    margin: 10px;
+    padding: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+ 
+}
+#navegador li:hover{
+    background-color:black;
+    color: white;
+}
+#navegador  li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+main hr{
+    border-color: black;
+    border-width:2px solid
+}
+main{
+    background-color: blanchedalmond;
+    padding: 10px;
+    height: 800px;
+    flex-wrap: wrap;
+}
+#principal{
+    background-color: blanchedalmond;
+    padding: 10px;
+    height: 700px;
+    flex-wrap: wrap;
+}
+#principal p{
+    padding-top: 20px;
+}
+main h3{
+    text-align: center;
+}
+#seccion {
+    margin: auto; 
+    padding: 20px; 
+    display: flex;
+}
+section {
+    margin: auto; 
+    padding: 20px; 
+    display: flex;
+}
+.escribir{
+    margin-bottom: 60px;
+}
+section .escribir{
+    margin-left: 30px;
+}
+.escribir input:hover{
+    background-color:cadetblue;
+    color: white;
+}
+.escribir input[type="text"] {
+    width: 100%; 
+    height: 40px; 
+    
+}
+.escribir input[type="submit"] {
+    width: 100%; 
+    height: 40px; }
+    
+section .mapa{
+    margin-left: 50px;
+}
+.mapa{
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+h2{
+    color: red;
+}
+table{
+    width:70%;
+}
+table th{
+    border: 1px solid black;
+}
+table td{
+    border: 1px solid black;
+}
+aside{
+    width: 30%;
+    height: 600px;
+    padding-left: 20px;
+    background-color:burlywood;
+    margin-left: 30px;
+    text-align:start;
+    margin-right: 10px;
+    padding-right: 15px;
+
+}
+aside .consulta{
+    text-align: center;
+    background-color: black;
+}
+aside .consulta input{
+    background-color:red ;
+    color: white;
+}
+aside .consulta input:hover{
+    background-color:darkolivegreen;
+    color: white;
+}
+input{
+    width: 100%;
+}
+
+footer{
+    background-color:cornflowerblue;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: 0px;
+
+}
+#pie {
+    display: flex;
+    padding: 20px;
+}
+#pie p{
+    color: white;
+    margin-left: 60px;
+}
+#pie img{
+    margin-right: 40px;
+    padding: 0px;
+    margin-left: 20px;
+}
