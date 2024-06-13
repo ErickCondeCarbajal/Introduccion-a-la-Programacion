@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <h1>EJERCICIO 1</h1>
+        <p>
+            <b>Desarrollar los ejercicios usando la instrucción repetitiva Do While.</b>
+        </p>
+
+        <p>	
+            1.  Calcular la suma de los 10 primeros números elevados al cuadrado
+            (1^2+2^2+⋯…..+10^2).
+        </p>
+        <div id="resultado">
+            <script>
+                var suma = 0;
+                var i = 1;
+    
+                do {
+                    suma += i * i;
+                    i++;
+                } while (i <= 10);
+    
+                document.write("La suma de los cuadrados de los 10 primeros números es: " + suma);
+            </script>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <main>
+        <h1>EJERCICIO 2</h1>
+        <p>
+            <b>Desarrollar los ejercicios usando la instrucción repetitiva Do While.</b>
+        </p>
+
+        <p>	
+            2.	Diseñar un programa que permita calcular la edad promedio de un grupo de N alumnos.
+        </p>
+        <div id="resultado">
+            <script>
+                var i = 1, edadPromedio, sumaEdades = 0;
+                var n = prompt("Ingrese la cantidad de alumnos en el grupo: ");
+    
+                do {
+                    var edad = prompt("Ingrese la edad del alumno " + i + ": ");
+                    edad = parseInt(edad); 
+                    sumaEdades += edad;
+                    i++;
+                } while (i <= n);
+    
+                edadPromedio = sumaEdades / n;
+    
+                document.write("La edad promedio del grupo de " + n + " alumnos es: " + edadPromedio);
+    
+    
+            </script>
+        </div>
+    </main>
+    
+</body>
+</html>

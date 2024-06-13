@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <main>
+        <h1>EJERCICIO 3</h1>
+        <p>
+            <b>Desarrollar los ejercicios usando la instrucción repetitiva Do While.</b>
+        </p>
+
+        <p>	
+            3.	Desarrollar un programa que permita calcular el factorial de un numero Entero.
+        </p>
+        <div id="resultado">
+            <script>
+                var numeroEntero = parseInt(prompt("Ingrese un número entero: "));
+                var factorial = 1;
+                var i = 1;
+
+                do {
+                    factorial *= i;
+                    i++;
+                } while (i <= numeroEntero);
+
+                document.write("El factorial de " + numeroEntero + " es: " + factorial);
+
+            </script>
+        </div>
+    </main>
+    
+</body>
+</html>
