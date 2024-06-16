@@ -1,0 +1,39 @@
+body{
+    background-color:azure;
+    padding-top: 100px;
+}
+#cuerpo{
+    width: 55%;
+    margin: auto;
+    height: 520px;
+    background-color:beige;
+    color: black;
+    border: 3px solid black;
+}
+.preguntas{
+    text-align: center;
+}
+.preguntas p{
+    font-size:22px;
+}
+.preguntas h1{
+    font-size: 35px;
+    text-decoration: underline;
+    background-color: black;
+    color: whitesmoke;
+}
+.resultado{
+    text-align: center;
+    background-color:gainsboro;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.circulo {
+    border-radius: 50%;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: inline-block; 
+}

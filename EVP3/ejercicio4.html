@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main id="cuerpo">
+        <div class="preguntas">
+            <h1><b>EJERCICIO 4</b></h1>
+            <p>
+                 <b>II.	Estructura repetitiva While:</b> <br>
+                 4.	Dado N calcular: (11)+(22)+(33)+……(NN)
+
+            </p>
+        </div>
+        <div class="resultado">
+            <script >
+           
+                var N =prompt("Ingrese el Dado N: ");
+                var i = 1;
+                var suma = 0;
+
+                while (i <= N) {
+                    suma += i * 10 + i;
+                    i++;
+                }
+
+                document.write("La suma de la serie (11) + (22) + (33) + ... + (" + N + "" + N + ") es: " + suma);
+     
+             </script>
+        </div>
+        
+        
+
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<style>
+</style>
+<body>
+    <main id="cuerpo">
+        <div class="preguntas">
+            <h1><b>EJERCICIO 5</b></h1>
+            <p>
+                 <b>III. Estructura repetitiva Do While:</b> <br>
+                 5.	Elaborar un programa que permita dibujar un cuadro de círculos de 10 x 10.
+
+            </p>
+        </div>
+        <div class="resultado">
+            <script >
+                var resultadoDiv = document.querySelector('.resultado');
+                var html = ''; 
+               
+                var i = 1;
+                do {
+                    var j = 1;
+                    do {
+                        html += '<div class="circulo"></div>'; 
+                        j++;
+                    } while (j <= 10);
+                    html += '<div style="clear:both;"></div>'; 
+                    i++;
+                } while (i <= 10);
+
+                resultadoDiv.innerHTML = html; 
+            
+             </script>
+        </div>
+    </main>
+    
+</body>
+</html>
