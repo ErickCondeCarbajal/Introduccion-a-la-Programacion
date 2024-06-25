@@ -1,0 +1,16 @@
+   body {
+    margin-top:40px;
+    background-color: whitesmoke;
+    }
+    #imgSrc{
+    width: 350px;
+    height: 200px;
+    }
+   
+    td a {
+    font:9px Verdana, Arial, Helvetica, "sans-serif";
+    color:white;
+    list-style: none;
+    text-decoration: none;
+    }
+    

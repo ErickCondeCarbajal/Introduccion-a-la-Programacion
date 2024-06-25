@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+          p{
+              font-size:32px;
+          }
+          
+      </style>
+  </head>
+<body>
+    <p><b>Lista de frutas</b></p>
+    <button onclick="fruta()">Muestra Lista de Frutas</button>
+    <p id="demo"></p>
+    <script>
+        function fruta() {
+        var i;
+        var text = "<ul>";
+        var frutas = ["Platano", "Naranja", "Manzana", "Mango","Fresa","Pera"];
+        for (i = 0; i < frutas.length; i++) {
+            text += "<li>" + frutas[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById("demo").innerHTML = text;
+    }   
+    </script>
+</body>
+</html>
+
