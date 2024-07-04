@@ -1,0 +1,10 @@
+#principal{
+    margin: auto;
+    height: 500px;
+    width: 85%;
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
+body{
+    background-color: azure;
+}
