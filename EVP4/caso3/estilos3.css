@@ -1,0 +1,37 @@
+body{
+    background-color: antiquewhite;
+}
+#principal{
+    margin: auto;
+    height: auto;
+    width: 55%;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    background-color: aliceblue;
+
+}
+#resultado button{
+    margin: 5px;
+}
+h1{
+    text-decoration: underline;
+    font-weight: bold   ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-wrap: break-word
+    ;
+}
+#resultado {
+    padding: 10px;
+    margin-top: 20px;
+    text-align: left;
+    text-align: center;
+    background-color: beige;
+
+}
